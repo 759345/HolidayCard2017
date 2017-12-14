@@ -9,7 +9,7 @@ Drawing draw;
 void setup()
 {
   size(800,600); 
-    draw=new Drawing();
+  draw=new Drawing();
   help= new Facts();
   //f = createFont("Times-Italic",16,true);
  // k= createFont("Futura-Medium",14,true); 
@@ -28,12 +28,29 @@ theFact=help.getFact();
 void draw()
 {
 background(0);
-draw.drawSky(); //lotta methods
-draw.drawSnow(); 
-draw.drawWalls(); 
-draw.drawWindows(); 
-draw.drawFloor(); 
-draw.drawTree(); 
+
+  noStroke(); 
+    fill(#583C20);
+rect(575,75,25,300); //window frame
+rect(575,75,300,25); //window frame
+rect(850,75,25,300);//window frame
+rect(575,350,300,25); //window frame
+rect(725,75,10,300); //middle Window
+rect(575,212.5,300,10); //middle window
+
+rect(1175,75,25,300);//second window
+rect(1175,75,300,25);
+rect(1450,75,25,300);
+rect(1175,350,300,25);
+rect(1325,75,10,300);
+rect(1175,212.5,300,10); 
+stroke(0); 
+//draw.drawSky(); //lotta methods
+//draw.drawSnow(); 
+///draw.drawWalls(); 
+//draw.drawWindows(); 
+//draw.drawFloor(); 
+//draw.drawTree(); 
 //image(star,190,300,130,100); 
 fill(255); //white
 //textFont(f,26);  
