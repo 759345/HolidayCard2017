@@ -8,7 +8,7 @@ ArrayList<Snow> snowList;
 Drawing draw=new Drawing(); 
 void setup()
 {
-  size(1800,1000); 
+  size(800,600); 
   //f = createFont("Times-Italic",16,true);
  // k= createFont("Futura-Medium",14,true); 
   //star=loadImage("star.png"); 
