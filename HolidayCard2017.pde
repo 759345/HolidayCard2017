@@ -1,6 +1,6 @@
-PFont f;
-PFont k; 
-PImage star; 
+//PFont f;
+//PFont k; 
+//PImage star; 
 boolean click = false;
 Facts help= new Facts();
 String theFact="";  
@@ -9,9 +9,9 @@ Drawing draw=new Drawing();
 void setup()
 {
   size(1800,1000); 
-  f = createFont("Times-Italic",16,true);
-  k= createFont("Futura-Medium",14,true); 
-  star=loadImage("star.png"); 
+  //f = createFont("Times-Italic",16,true);
+ // k= createFont("Futura-Medium",14,true); 
+  //star=loadImage("star.png"); 
   snowList=new ArrayList(900); 
   
 }
@@ -32,17 +32,17 @@ draw.drawWalls();
 draw.drawWindows(); 
 draw.drawFloor(); 
 draw.drawTree(); 
-image(star,190,300,130,100); 
+//image(star,190,300,130,100); 
 fill(255); //white
-textFont(f,26);  
+//textFont(f,26);  
 text(theFact, 460,780);  //text for the fact 
 draw.drawGift();
 fill(255); 
-textFont(k,12); 
+//textFont(k,12); 
 text("Click us",193,865); 
-textFont(k,20); 
+//textFont(k,20); 
 text("The Tree of Knowledge",160,600); 
-textFont(k,50); 
+//textFont(k,50); 
 fill(#B92406);
 text("Merry Christmas!!!",100,120); 
 if(help.askinForIt(mouseX,mouseY)&& click)
