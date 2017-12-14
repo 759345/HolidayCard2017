@@ -2,13 +2,15 @@
 //PFont k; 
 //PImage star; 
 boolean click = false;
-Facts help= new Facts();
+Facts help;
 String theFact="";  
 ArrayList<Snow> snowList; 
-Drawing draw=new Drawing(); 
+Drawing draw; 
 void setup()
 {
   size(800,600); 
+    draw=new Drawing();
+  help= new Facts();
   //f = createFont("Times-Italic",16,true);
  // k= createFont("Futura-Medium",14,true); 
   //star=loadImage("star.png"); 
